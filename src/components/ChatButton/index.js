@@ -1,4 +1,4 @@
-
+"use client"
 import {useState} from 'react';
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 import { MdOutlineMinimize } from "react-icons/md";
