@@ -7,9 +7,9 @@ import clsx from 'clsx';
 import CountUp from 'react-countup';
 import {motion,useScroll,useTransform,AnimatePresence} from 'framer-motion';
 
-function Slider({onClickButton,title,img,description,button}){
+function Slider({title,img,description,button}){
     const {scrollY} = useScroll();
-    const yText = useTransform(scrollY,[0,50,100,200],[1,1.1,1.2,1.3])
+    const yText = useTransform(scrollY,[0,50,100,200],[1,1.1,1.1,1.2])
     const opacityText = useTransform(scrollY,[0,200,300],[1,1,1])
     
     return (
@@ -30,12 +30,12 @@ function Slider({onClickButton,title,img,description,button}){
             before:opacity-75
             before:z-[-5]">
            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white ">
-            <motion.h1 className="mb-4 text-4xl font-bold max-w-xl "
+            <motion.h1 className="mb-4 text-4xl font-bold max-w-xl sm:mb-7"
             initial={{scale:1,opacity:1}}
             style={{scale:yText,opacity:opacityText}}
             transition={{opacity:{ease: "easeInOut",duration:0.5},scaleY:{ease: "easeInOut",duration:0.5}}}
             >{title}</motion.h1>
-            <motion.p className="max-w-xl mb-4"
+            <motion.p className="max-w-xl mb-4 sm:mb-7"
             initial={{scale:1,opacity:1}}
             style={{scale:yText,opacity:opacityText}}
             transition={{opacity:{ease: "easeInOut",duration:0.5},scaleY:{ease: "easeInOut",duration:0.5}}}>{description}
@@ -47,9 +47,10 @@ function Slider({onClickButton,title,img,description,button}){
             transition={{opacity:{ease: "easeInOut",duration:0.5},scaleY:{ease: "easeInOut",duration:0.5}}}>{button}</motion.button>
            </div>
         
-           <button className="z-160 block absolute top-1/2 right-2 mr-2 -translate-y-1/2 cursor-pointer  text-[rgba(255,255,255,0.3)] px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/10 hover:outline-gray-100/50 hover:scale-110 hover:text-[rgba(255,255,255,0.6)] hover:bg-[rgba(255,255,255,0.4]" onClick={onClickButton}><IoIosArrowForward /></button>
-        <button className="z-10 absolute top-1/2 left-2 mr-2 -translate-y-1/2 cursor-pointer  text-[rgba(255,255,255,0.3)] px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/10 hover:outline-gray-100/50 hover:scale-110 hover:text-[rgba(255,255,255,0.6)] hover:bg-[rgba(255,255,255,0.4]" onClick={onClickButton}><IoIosArrowBack 
-        className="text-[rgba(255,255,255,0.3] hover:text-[255,255,255,0.4]"/></button>
+           {/* <button className="z-10 block absolute top-1/2 right-2 mr-2 -translate-y-1/2 cursor-pointer  text-[rgba(255,255,255,0.3)] px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/10 hover:outline-gray-100/50 hover:scale-110 hover:text-[rgba(255,255,255,0.6)] hover:bg-[rgba(255,255,255,0.4]" onClick={onClickButton}><IoIosArrowForward /></button>
+        <button className="z-10 absolute top-1/2 left-2 mr-2 -translate-y-1/2 cursor-pointer  text-[rgba(255,255,255,0.3)] px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/10 hover:outline-gray-100/50 hover:scale-110 hover:text-[rgba(255,255,255,0.6)] hover:bg-[rgba(255,255,255,0.4]" onClick={onClickButton}>
+            <IoIosArrowBack 
+        className="text-[rgba(255,255,255,0.3] hover:text-[255,255,255,0.4]"/></button> */}
  
 
         </motion.div>
@@ -76,8 +77,11 @@ export default function Carousel() {
   return (
     <>
     
-<div className="relative  w-full h-[calc(100%-80px)] ')]">
-
+<div className="relative  w-full h-[calc(100%-80px)] z-1')]">
+<button className="z-20 block absolute top-1/2 right-2 mr-2 -translate-y-1/2 cursor-pointer  text-[rgba(255,255,255,0.3)] px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/10 hover:outline-gray-100/50 hover:scale-110 hover:text-[rgba(255,255,255,0.6)] hover:bg-[rgba(255,255,255,0.4]" onClick={handleClick}><IoIosArrowForward /></button>
+        <button className="z-20 absolute top-1/2 left-2 mr-2 -translate-y-1/2 cursor-pointer  text-[rgba(255,255,255,0.3)] px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/10 hover:outline-gray-100/50 hover:scale-110 hover:text-[rgba(255,255,255,0.6)] hover:bg-[rgba(255,255,255,0.4]" onClick={handleClick}>
+            <IoIosArrowBack 
+        className="text-[rgba(255,255,255,0.3] hover:text-[255,255,255,0.4]"/></button>
     <AnimatePresence mode="wait" initial={false}>
     {isClicked?(
     <MotionSlider key="0" 
