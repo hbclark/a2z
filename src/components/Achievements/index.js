@@ -27,7 +27,7 @@ export default function Achievements(){
         <div className="grid grid-cols-1 lg:grid-cols-3 px-0 lg:px-96 py-4 lg:py-20 bg-retroBlue-700 text-white">
           {achievements.map((achievement,index)=>(
           
-            <motion.div className="" key={achievement.id}
+            <motion.div className="text-center" key={achievement.id}
                 variants = {fadeInOutAnimationVariant}
                 initial = "initial"
                 whileInView = "animate"

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Carousel from "@/components/Carousel";
 import NavBar from "@/components/NavBar";
-import {Achievements,CallToAction, PricePlan } from "@/components";
+import {Achievements,CallToAction,Contact ,PricePlan } from "@/components";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
    <CallToAction />
    <Achievements />
    <PricePlan />
-   
+   <Contact />
    </>
   );
 }
