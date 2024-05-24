@@ -8,7 +8,6 @@ export default function Achievements(){
     const achievements = [
         {id:1,number:23432,text:"Happy Clients", },
         {id:2,number:96,text:"Projects Completed"},
-        
         {id:3,number:93,text:"Awards Won"}
     ]
 
