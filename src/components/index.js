@@ -1,3 +1,5 @@
 import PricePlan from "./PricePlan";
+import Achievements from "./Achievements";
 
-export {PricePlan};
+import CallToAction from "./CallToAction";
+export {Achievements,CallToAction,PricePlan};

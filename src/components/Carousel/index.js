@@ -4,7 +4,7 @@
 import {useState,useEffect} from 'react';
 import { IoIosArrowForward,IoIosArrowBack } from "react-icons/io";
 import clsx from 'clsx';
-import CountUp from 'react-countup';
+
 import {motion,useScroll,useTransform,AnimatePresence} from 'framer-motion';
 
 function Slider({title,img,description,button}){
@@ -39,7 +39,7 @@ function Slider({title,img,description,button}){
             initial={{scale:1,opacity:1}}
             style={{scale:yText,opacity:opacityText}}
             transition={{opacity:{ease: "easeInOut",duration:0.5},scaleY:{ease: "easeInOut",duration:0.5}}}>{description}
-            <CountUp end={100000} duration={5} delay={1} separator=","/>
+            
             </motion.p> 
             <motion.button className=" mx-auto w-max  bg-goldenYellow-500 px-2 py-2 rounded-md hover:text-goldenYellow-500 hover:bg-transparent hover:outline hover:outline-1 hover:outline-goldenYellow-500"
             initial={{scale:1,opacity:1}}
