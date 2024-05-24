@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Carousel from "@/components/Carousel";
 import NavBar from "@/components/NavBar";
+import { PricePlan } from "@/components";
 
 export default function Home() {
   return (
@@ -8,7 +9,10 @@ export default function Home() {
    <div className="w-full h-screen">
     <NavBar />  
    <Carousel />
+  
    </div>
+   
+   <PricePlan />
    
    </>
   );

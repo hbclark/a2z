@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { motion } from 'framer-motion';
 export default function Footer() {
   return (
-    <footer className="w-screen pt-10 border-t-8 border-goldenYellow-600  pl-4 lg:pl-0  ">
+    <footer className="w-full pt-10 border-t-8 border-goldenYellow-600  pl-4 lg:pl-0  ">
         <div className="lg:px-40 pb-10 lg:pb-2 ">
         <div className="flex sm:flex-row flex-col justify-between   ">
             <section className="mb-4">
