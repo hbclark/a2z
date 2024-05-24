@@ -17,7 +17,7 @@ import clsx from "clsx";
 
 // type Props = {};
 
-export default function Navbar() {
+export default function NavBar() {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
   
 

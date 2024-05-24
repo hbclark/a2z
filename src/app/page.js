@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Carousel from "@/components/Carousel";
-import NavBar from "@/components/NavBar";
-import {Achievements,CallToAction,Contact ,PricePlan } from "@/components";
+
+import {Achievements,CallToAction,Contact, NavBar,PricePlan } from "@/components";
 
 export default function Home() {
   return (
