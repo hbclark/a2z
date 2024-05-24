@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Carousel from "@/components/Carousel";
 import NavBar from "@/components/NavBar";
-import {CallToAction, PricePlan } from "@/components";
+import {Achievements,CallToAction, PricePlan } from "@/components";
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
   
    </div>
    <CallToAction />
+   <Achievements />
    <PricePlan />
    
    </>
