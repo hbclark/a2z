@@ -1,7 +1,7 @@
 "use client"
-import CountUp from 'react-countup';
+import CountUp ,{useCountUp} from 'react-countup';
 import {motion} from 'framer-motion';
-
+import VisibilitySensor from 'react-visibility-sensor';
 
 
 export default function Achievements(){
@@ -15,12 +15,13 @@ export default function Achievements(){
         initial:{opacity:0,y:100},
         animate:(i)=>(
             {opacity:1,y:0,transition:{
-                duration:0.5,
+                duration:0.3,
                 ease:"easeInOut",
                 delay:i*0.3}}
         )
     }
 
+    
 
     return(
         <div className="grid grid-cols-1 lg:grid-cols-3 px-0 lg:px-96 py-4 lg:py-20 bg-gradient-to-b from-retroBlue-600 to-retroBlue-700 text-white">
@@ -33,8 +34,18 @@ export default function Achievements(){
                 whileInView = "animate"
                 custom = {index}
             >
-                <p className="text-3xl font-bold mb-4"> <CountUp end={achievement.number} delay ={1.5} duration={2} /></p>
-               
+                <p className="text-3xl font-bold mb-4"> <CountUp enableScrollSpy= {true}  end={achievement.number}  duration={2} >
+                {({ countUpRef, start }) => (
+                <VisibilitySensor onChange={start} delayedCall>
+                    <span ref={countUpRef} />
+                </VisibilitySensor>
+            )}
+
+                
+                
+                </ CountUp>
+                </p>
+
                 <p>{achievement.text}</p>
 
           </motion.div>
