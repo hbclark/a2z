@@ -8,9 +8,9 @@ import {animate, motion} from "framer-motion";
 
 export default function PricePlan(){
     const prices = [
-        {id:1,title:"General waste", price:"$100", features:["Feature 1", "Feature 2", "Feature 3"],color:"retroBlue-600"},
+        {id:1,title:"General waste", price:"$100", features:["Feature 1", "Feature 2", "Feature 3"],color:"retroBlue-500"},
         {id:2,title:"Biomedical waster", price:"$300", features:["Feature 1", "Feature 2", "Feature 3"],color:"goldenYellow-600"},
-        {id:3,title:"Hazardous waste", price:"$600", features:["Feature 1", "Feature 2", "Feature 3"],color:"rust-800"},
+        {id:3,title:"Hazardous waste", price:"$600", features:["Feature 1", "Feature 2", "Feature 3"],color:"goldenYellow-800"},
        
     ]
 
@@ -49,7 +49,7 @@ export default function PricePlan(){
                 custom={index}
                 className={`w-72 h-72 mx-auto border-t-8 border border-${color} p-4 rounded-lg shadow-lg bg-white text-center`}
                 >
-              <p className="mt-4 flex justify-center"> <RiDeleteBinLine className={`text-goldenYellow-600 text-3xl`} /></p>
+              <p className="mt-4 flex justify-center"> <RiDeleteBinLine className={`text-${color} text-3xl`} /></p>
             <h2 className="my-4 text-xl font-semibold">{title}</h2>
             <p className="mb-4"><span className=" text-xl font-semibold">{price}</span> / <span className="font-medium text-sm">per Month</span> </p>
             <ul>

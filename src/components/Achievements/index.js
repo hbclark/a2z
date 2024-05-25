@@ -23,7 +23,8 @@ export default function Achievements(){
 
 
     return(
-        <div className="grid grid-cols-1 lg:grid-cols-3 px-0 lg:px-96 py-4 lg:py-20 bg-retroBlue-700 text-white">
+        <div className="grid grid-cols-1 lg:grid-cols-3 px-0 lg:px-96 py-4 lg:py-20 bg-gradient-to-b from-retroBlue-600 to-retroBlue-700 text-white">
+            <div className="absolute inset-0 bg-[url('/images/achievement_revised.jpg')] bg-repeat bg-cover opacity-10"></div>
           {achievements.map((achievement,index)=>(
           
             <motion.div className="text-center" key={achievement.id}
