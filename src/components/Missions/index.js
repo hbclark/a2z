@@ -100,6 +100,9 @@ export default function Missions(){
                     scale: index===currentIndex? 0:0.5,
                   
                   }}
+                  // initial={{ opacity: 0, scale:0.5 }}
+                  // animate={{ opacity: 1, scale:1 }}
+                  // exit={{ opacity: 0, scale:0.5 }}
                   transition={{
                     ease: "linear",
                     duration: 2,

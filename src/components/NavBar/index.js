@@ -44,7 +44,7 @@ export default function NavBar() {
 
 
   return (
-    <header className=" w-screen sticky top-0 lg:px-40 text-black bg-gray-100 z-20">
+    <header className="  sticky top-0 lg:px-40 text-black bg-gray-100 z-20">
       <nav className="flex  sm:px-0 px-8 justify-between pb-2 pt-4 mt-2 ">
        
           <section className=" flex items-center gap-4 ">
