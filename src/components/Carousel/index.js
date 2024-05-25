@@ -72,7 +72,7 @@ export default function Carousel() {
     
     function handleClick(){
         setIsClicked(isClicked=>!isClicked)
-        console.log(isClicked)
+        
     }
   return (
     <>

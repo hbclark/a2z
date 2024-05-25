@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import {motion, AnimatePresence} from 'framer-motion';
+
 import recyclingEvents from './recyclingEvents.js';
 
 export default function Events(){
@@ -23,6 +24,7 @@ function handleClick(e,status){
                 Recycling Events
             </h2>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 justify-items-center px-0 ">
+           
           {recyclingEvents.map(({id, imageSrc,title, description, time, location}, index) => (
             <div key={id}
            
@@ -58,7 +60,7 @@ function handleClick(e,status){
                 </AnimatePresence>
             </div>
             ))}
-        
+       
         </div>
         </div>
 

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { FiMenu } from "react-icons/fi";
 import { IoCloseOutline } from "react-icons/io5";
+import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 import {animate, motion } from "framer-motion";
 import { CiHome } from "react-icons/ci";
@@ -19,8 +20,11 @@ import clsx from "clsx";
 
 export default function NavBar() {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
+  const [active, setActive] = useState(1);
   
-
+  console.log(typeof active)
+  console.log(active)
+  console.log(isSideMenuOpen)
   const navLinks = [
     { id:1,label: "Home", href: "/",icon: <CiHome /> },
     { id:2,label: "Purpose", href: "/purpose",icon: <SiTransmission />},
@@ -40,11 +44,15 @@ export default function NavBar() {
        })
     }
     
+    function handleClick(label){
+     console.log(label);
+      setActive(label);
+    }
   
 
 
   return (
-    <header className="  sticky top-0 lg:px-40 text-black bg-gray-100 z-20">
+    <header className="  fixed w-full  top-0 lg:px-40 text-black bg-gray-100 z-20">
       <nav className="flex  sm:px-0 px-8 justify-between pb-2 pt-4 mt-2 ">
        
           <section className=" flex items-center gap-4 ">
@@ -57,28 +65,28 @@ export default function NavBar() {
             />
             {/* Logo */}
             <h1 className="flex sm:px-5">
-              <a href="index.html"
+              <Link href="/"
                 className="w-10 h-10">
                  
                 <Image src="/images/a2z.svg" alt="A2Z Logo" width={30} height={30} 
-              /></a> 
+              /></Link> 
             </h1>
             
           </section>
           <div className="flex  justify-between  gap-4">
           {navLinks.map((link) => (
-            <a
+            <Link
               href={link.href}
               key={link.id}
-              className="
-               my-auto
-              hidden lg:block text-goldenYellow-700 font-bold
-              hover:text-goldenYellow-700 hover:border-b-2 hover: border-goldenYellow-800
-              transition-transform"
-              
+              className={`${active ==link.id ?"border-b-2 border-red-600" : ""}
+               my-auto 
+              hidden lg:block text-rust-700 font-bold
+              hover:text-rust-800 hover:border-b-2 hover:border-rust-800
+              transition-transform`}
+              onClick = {()=>setActive(link.id) }
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
         </nav>
@@ -113,7 +121,7 @@ export default function NavBar() {
               
               >
                 <span className="w-3 h-3 mr-2 mt-1">{link.icon}</span>
-                <a href={link.href} className="text-xl">{link.label}</a>
+                <Link href={link.href} className="text-xl">{link.label}</Link>
                 
               </motion.li>
             ))}</ul>
