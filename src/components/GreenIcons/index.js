@@ -68,28 +68,28 @@ export default function GreenIcons(){
     
 
     return (
-        <div className="my-4">
+        <div className="my-4 relative">
           <h2 className="text-2xl font-bold text-center">Our Commitment to Sustainability</h2>
-            <div className="relative grid grid-cols-6 gap-y-4 gap-x-[1px] px-0  mt-10 mb-4 lg:px-64 xl:px-96 ">
+        <div className=" grid grid-cols-1 lg:grid-cols-5 gap-y-4 gap-x-[1px] px-2 justify-self-center  lg:px-64 mt-10 mb-4 max-w-7xl mx-auto ">
       {icons.map((icon, index) => (
-        <motion.div key={index} className="col-span-1 flex justify-self-center items-center"
+        <motion.div key={index} className="col-span-1 flex  flex-row lg:flex-col justify-start  gap-x-20  "
         variants= {fadeInOutAnimationVariants}
         initial="initial"
         whileInView = "animate"
         custom = {index}
 
         >
-          <div> <Image src={icon.src} alt={icon.alt} width={50} height={50} className="ml-2" />
+           <Image src={icon.src} alt={icon.alt} width={50} height={50} className="ml-2 " />
             <p className="mt-2">{icon.desc}</p>
-          </div>
+          
          
         </motion.div>
       ))}
-      <Link href="https://www.freepik.com/search"
-className="absolute bottom-2 right-2 text-green-400 text-xs">Icon by Freepik</Link>
+     
     </div>
 
-
+    <Link href="https://www.freepik.com/search"
+className="absolute bottom-2 right-2 text-green-400 text-xs">Icon by Freepik</Link>
 
 
         </div>
