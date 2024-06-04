@@ -64,16 +64,16 @@ export default function Missions(){
         }
       ]
     return (
-
-<ul className=" relative px-0 lg:px-60 pt-2 pb-20  lg:py-20 bg-gradient-to-b from-green-200 to-green-500 text-black w-full min-h-screen mx-auto grid place-items-center">
+<div className="bg-gradient-to-b from-green-300 to-green-500">
+<ul className=" relative px-2 max-w-7xl pt-2 pb-20  lg:py-20  text-black w-full  mx-auto grid place-items-center">
   <h2 className="pb-6 text-3xl font-bold uppercase tracking-wider">Our Purposes</h2>
-  <div className="absolute inset-0 bg-[url('/images/missions/background_texture.png')] bg-cover opacity-10"></div>
+  {/* <div className="absolute inset-0 bg-[url('/images/missions/background_texture.png')] bg-cover opacity-10"></div> */}
   <AnimatePresence>
             {contents.map((content,index)=>(
               
                 <motion.li key={index} className={`${
                     currentIndex === index
-                      ? "flex w-full h-[85vh] lg:h-[60vh]  transition-all duration-500 ease-in-out flex-col lg:flex-row"
+                      ? "flex w-full  lg:h-[60vh]  transition-all duration-500 ease-in-out flex-col lg:flex-row"
                       : "hidden" 
                   }`}
                   
@@ -84,7 +84,7 @@ export default function Missions(){
                    <div className="lg:col-span-1 ">
                        <Image src={content.image}  alt={`${content.title}`} width={600} height={600} className="w-full h-full object-cover"/>
                    </div>
-                   <motion.div className="lg:col-span-1 pt-4 lg:pt-0 flex flex-col -translate-x-1/2 -translate-y-1/2 justify-center  text-left items-start"
+                   <motion.div className="lg:col-span-1 pt-10 lg:pt-0 flex flex-col -translate-x-1/2 -translate-y-1/2 justify-center  text-left items-start"
                    
                    
                    initial={{
@@ -110,7 +110,7 @@ export default function Missions(){
                   }}
                   
                   >
-                    <div className="w-1/2 mx-auto">
+                    <div className="w-full px-2 lg:px-20 mx-auto">
                        <h2 className="text-3xl font-bold uppercase tracking-tight mb-6  ">{content.title}</h2>
                        <p className="pb-4">{content.description}</p>
                        <button className="bg-retroBlue-600 hover:bg-retroBlue-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 cursor-pointer">
@@ -129,5 +129,6 @@ export default function Missions(){
             
         
 </ul>
+</div>
     )
 }

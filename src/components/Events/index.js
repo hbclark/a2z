@@ -23,7 +23,7 @@ function handleClick(e,status){
             <h2 className="text-3xl font-bold text-center mb-6">
                 Recycling Events
             </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 justify-items-center px-0 ">
+        <div className="grid grid-cols-1 lg:grid-cols-4 justify-items-center px-0 ">
            
           {recyclingEvents.map(({id, imageSrc,title, description, time, location}, index) => (
             <div key={id}

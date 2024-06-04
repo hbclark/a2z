@@ -35,7 +35,8 @@ function Slider({title,img,description,button}){
             style={{scale:yText,opacity:opacityText}}
             transition={{opacity:{ease: "easeInOut",duration:0.5},scaleY:{ease: "easeInOut",duration:0.5}}}
             >{title}</motion.h1>
-            <motion.p className="max-w-xl mb-4 sm:mb-7"
+
+            <motion.p className="max-w-2xl mb-4 sm:mb-7"
             initial={{scale:1,opacity:1}}
             style={{scale:yText,opacity:opacityText}}
             transition={{opacity:{ease: "easeInOut",duration:0.5},scaleY:{ease: "easeInOut",duration:0.5}}}>{description}
@@ -77,7 +78,7 @@ export default function Carousel() {
   return (
     <>
     
-<div className="relative  w-full h-[calc(100%-80px)] z-1')]">
+<div className="relative  w-full h-full z-1')]">
 <button className="z-20 block absolute top-1/2 right-2 mr-2 -translate-y-1/2 cursor-pointer  text-[rgba(255,255,255,0.6)] px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/60 hover:outline-gray-100/90 hover:scale-110 hover:text-[rgba(255,255,255,0.9)] hover:bg-[rgba(255,255,255,0.4]" onClick={handleClick}><IoIosArrowForward /></button>
 
         <button className="z-20 absolute top-1/2 left-2 mr-2 -translate-y-1/2 cursor-pointer  text-[rgba(255,255,255,0.6)] px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/60 hover:outline-gray-100/90 hover:scale-110 hover:text-[rgba(255,255,255,0.9)] hover:bg-[rgba(255,255,255,0.4]" onClick={handleClick}>
@@ -88,7 +89,7 @@ export default function Carousel() {
     <MotionSlider key="0" 
     img ={'/images/Recycling-images/pexels-pixabay-247763.jpg'} onClickButton = {handleClick} title={"World's Leading Waste Management Pollution Solution"} description={"Pollution of the Reduce, Reuse, and Recycle waste process steps Recycle waste process steps discover service."} button={"Discover More"}/>):
     (<MotionSlider  key="1" 
-    onClickButton ={handleClick} title={"Reviving Our Planet, One Recycle at a Time"} description={"Join us in our mission to transform waste into resources. At [Company Name], we believe in a sustainable future, where every piece of material has a second life. Explore our innovative recycling solutions and become a part of the change that nurtures our world"} img={'/images/Recycling-images/A2Z.png'} button={"Discover More"}  />)}
+    onClickButton ={handleClick} title={"Reviving Our Planet, One Recycle at a Time"} description={"Join us in our mission to transform waste into resources. At [Company Name], we believe in a sustainable future, where every piece of material has a second life. "} img={'/images/Recycling-images/A2Z.png'} button={"Discover More"}  />)}
    </AnimatePresence>
 </div>
 
