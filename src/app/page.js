@@ -12,10 +12,11 @@ export default function Home() {
   
    </div>
    <Events />
-   <CallToAction />
+   <Missions />
+   
    <Achievements />
    <GreenIcons />
-  <Missions />
+   <CallToAction />
    <PricePlan />
    <Contact />
    <FAQ />  

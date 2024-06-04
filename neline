@@ -1,0 +1,96 @@
+[33mcommit e06618e9c60da2f9b8f5c58cac7bf5acf2a8e836[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: clark he <arcaneade@gmail.com>
+Date:   Sun May 26 08:37:38 2024 +1000
+
+    before three.js
+
+[33mcommit 86943cc8c9788158859add3c9ff51be69eb74578[m
+Author: clark he <arcaneade@gmail.com>
+Date:   Sat May 25 16:21:31 2024 +1000
+
+    events
+
+[33mcommit ba09497a7e1eaa8a8745a972428bb3bc09386d38[m
+Merge: ebff071 269927b
+Author: clark he <arcaneade@gmail.com>
+Date:   Sat May 25 13:12:15 2024 +1000
+
+    Merge branch 'master' of https://github.com/hbclark/a2z
+
+[33mcommit ebff0718775fdf37a6bd4d644a83b6306e020eae[m
+Author: clark he <arcaneade@gmail.com>
+Date:   Sat May 25 13:09:42 2024 +1000
+
+    FAQ
+
+[33mcommit 269927ba077f64b3274df1f07d841aaaf5062847[m
+Author: clark he <arcaneade@gmail.com>
+Date:   Fri May 24 20:41:18 2024 +1000
+
+    before antd
+
+[33mcommit 8871698e7444099c659531f61ce1fe180e0a2dbe[m
+Author: clark he <arcaneade@gmail.com>
+Date:   Fri May 24 18:31:44 2024 +1000
+
+    NavBar jsx->js
+
+[33mcommit ed5734d59600304d84bc1edc5f0eb8865232a300[m
+Author: clark he <arcaneade@gmail.com>
+Date:   Fri May 24 18:29:22 2024 +1000
+
+    NavBar fix
+
+[33mcommit 56cb28fff62b819d78edb1ddd4302e3f88b7a62d[m
+Author: clark he <arcaneade@gmail.com>
+Date:   Fri May 24 18:25:53 2024 +1000
+
+    remove flowbite
+
+[33mcommit 7ae061e476897bd81f5e69a6a0898c38eccbbc64[m
+Author: clark he <arcaneade@gmail.com>
+Date:   Fri May 24 18:22:58 2024 +1000
+
+    contact
+
+[33mcommit e11d63090fd4efa980a767924f81463fca29ce00[m
+Author: clark he <arcaneade@gmail.com>
+Date:   Fri May 24 17:28:12 2024 +1000
+
+    achievements
+
+[33mcommit 8d21bb0ec8018afc574cec77a19636fcf531d2a1[m
+Author: clark he <arcaneade@gmail.com>
+Date:   Fri May 24 17:12:59 2024 +1000
+
+    CTA
+
+[33mcommit aa3baad44556d403bd70ed420958acdeed088d0c[m
+Author: clark he <arcaneade@gmail.com>
+Date:   Fri May 24 15:20:17 2024 +1000
+
+    price plan
+
+[33mcommit bce505e66525c508a7e7aa24ca78a7ffec7da49a[m
+Author: clark <arcaneade@gmail.com>
+Date:   Wed May 22 08:44:04 2024 +1000
+
+    minor fix
+
+[33mcommit 2f63fdc34629b0457bae21eb37feba52d86f9ef7[m
+Author: clark <arcaneade@gmail.com>
+Date:   Tue May 21 17:26:51 2024 +1000
+
+    responsive menu z-index
+
+[33mcommit ac8fdad0cfc7082cee1296d980aa46d18d255728[m
+Author: clark he <arcaneade@gmail.com>
+Date:   Sun May 19 22:23:29 2024 +1000
+
+    init
+
+[33mcommit e9bfadf6a684c6e7264a6f2ac4af197f74ce9f99[m
+Author: clark he <arcaneade@gmail.com>
+Date:   Sun May 19 13:45:53 2024 +1000
+
+    Initial commit from Create Next App

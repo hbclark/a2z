@@ -15,53 +15,43 @@ import {
     recycling,
     recycleIcon  
   } from "@/assets/greenIcons/index.js";
+  
 
 export default function GreenIcons(){
     const icons = [
         {
           src: carbonFootprint,
-          alt: "Carbon Footprint"
+          alt: "Carbon Footprint",
+          desc:"Reduce Carbon Emissions"
         },
         {
           src: ecoFriendly,
-          alt: "Eco Friendly"
+          alt: "Eco Friendly",
+          desc:"Eco-Friendly Solutions"
+
         },
         {
           src: greenEnergy,
-          alt: "Green Energy"
+          alt: "Green Energy",
+          desc:"Renewable Energy"
         },
-        {
-          src: organic,
-          alt: "Organic"
-        },
-        {
-          src: planetEarth,
-          alt: "Planet Earth"
-        },
+        
+       
         {
           src: recovery,
-          alt: "Recovery"
+          alt: "Recovery",
+          desc:"Recycling & Reuse"
         },
-        {
-          src: recycleSymbol,
-          alt: "Recycle Symbol"
-        },
+      
         {
           src: sustainableEnergy,
-          alt: "Sustainable Energy"
+          alt: "Sustainable Energy",
+          desc:"Sustainable Energy"
+          
         },
-        {
-          src: zeroWaste,
-          alt: "Zero Waste"
-        },
-        {
-          src: recycling,
-          alt: "Recycling"
-        },
-        {
-          src: recycleIcon,
-          alt: "Recycle Icon"
-        }
+        
+        
+       
     ]
 
     const fadeInOutAnimationVariants = {
@@ -78,8 +68,9 @@ export default function GreenIcons(){
     
 
     return (
-        <div>
-            <div className="relative grid grid-cols-6 gap-y-4 gap-x-[1px] px-0 lg:px-[700px] mt-10 mb-4  ">
+        <div className="my-4">
+          <h2 className="text-2xl font-bold text-center">Our Commitment to Sustainability</h2>
+            <div className="relative grid grid-cols-6 gap-y-4 gap-x-[1px] px-0  mt-10 mb-4 lg:px-64 xl:px-96 ">
       {icons.map((icon, index) => (
         <motion.div key={index} className="col-span-1 flex justify-self-center items-center"
         variants= {fadeInOutAnimationVariants}
@@ -88,14 +79,18 @@ export default function GreenIcons(){
         custom = {index}
 
         >
-          <Image src={icon.src} alt={icon.alt} width={50} height={50} />
+          <div> <Image src={icon.src} alt={icon.alt} width={50} height={50} className="ml-2" />
+            <p className="mt-2">{icon.desc}</p>
+          </div>
+         
         </motion.div>
       ))}
+      <Link href="https://www.freepik.com/search"
+className="absolute bottom-2 right-2 text-green-400 text-xs">Icon by Freepik</Link>
     </div>
 
 
-<Link href="https://www.freepik.com/search"
-className="absolute bottom-2 right-2 text-green">Icon by Freepik</Link>
+
 
         </div>
     )

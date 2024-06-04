@@ -22,9 +22,7 @@ export default function NavBar() {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
   const [active, setActive] = useState(1);
   
-  console.log(typeof active)
-  console.log(active)
-  console.log(isSideMenuOpen)
+  
   const navLinks = [
     { id:1,label: "Home", href: "/",icon: <CiHome /> },
     { id:2,label: "Purpose", href: "/purpose",icon: <SiTransmission />},
@@ -45,7 +43,7 @@ export default function NavBar() {
     }
     
     function handleClick(label){
-     console.log(label);
+     
       setActive(label);
     }
   
@@ -78,10 +76,10 @@ export default function NavBar() {
             <Link
               href={link.href}
               key={link.id}
-              className={`${active ==link.id ?"border-b-2 border-red-600" : ""}
+              className={`${active ==link.id ?"border-b-2 text-rust-800" : ""}
                my-auto 
-              hidden lg:block text-rust-700 font-bold
-              hover:text-rust-800 hover:border-b-2 hover:border-rust-800
+              hidden lg:block text-black font-bold
+              hover:text-gray-800 hover:border-b-2 hover:border-rust-700
               transition-transform`}
               onClick = {()=>setActive(link.id) }
             >
@@ -113,7 +111,7 @@ export default function NavBar() {
             <ul className="mt-14 flex flex-col gap-2 ">
             
             {navLinks.map((link,index) => (
-              <motion.li key={link.id} className = "flex py-2 text-goldenYellow-700"
+              <motion.li key={link.id} className = "flex py-2 text-black"
               variants={fadeInAnimationVariants}
               initial="initial"
               whileInView="animate"

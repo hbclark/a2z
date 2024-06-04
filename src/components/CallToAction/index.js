@@ -2,7 +2,7 @@
 import Image from   "next/image";
 import { IoIosArrowRoundForward } from "react-icons/io";
 export default function CallToAction(){
-    return <div className=" px-0 mt-10 flex flex-col lg:flex-row lg:px-96 bg-gradient-to-b from-green-500 to-green-600">
+    return <div className="  mt-10 flex flex-col lg:flex-row  bg-gradient-to-b from-green-500 to-green-600">
         <div className="absolute inset-0 bg-[url('/images/missions/background_texture.png')] bg-cover opacity-10"></div>
 <div className="my-auto w-full bg-emerald-500">
     <Image src="/images/recycle concept.jpg" alt="cta" width={600} height={600}

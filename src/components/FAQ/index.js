@@ -7,7 +7,7 @@ import AvatarStack  from './AvatarStack';
 
 export default function FAQ(){
   return (
-    <div className=" py-10 px-2 lg:px-96 bg-gradient-t-b from-[#33333300] to-[#000000]">
+    <div className=" px-2 lg:px-0 py-10 mx-auto max-w-7xl bg-gradient-t-b from-[#33333300] to-[#000000]">
       <div className='grid grid-cols-1 lg:grid-cols-2 pt-4 gap-x-10 border-t-4 border-retroBlue-500'>
       
         <div>

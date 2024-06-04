@@ -5,8 +5,8 @@ import { FaArrowRight } from "react-icons/fa";
 import { motion } from 'framer-motion';
 export default function Footer() {
   return (
-    <footer className="w-full pt-10 border-t-8 border-goldenYellow-600  pl-4 lg:pl-0  ">
-        <div className="lg:px-40 pb-10 lg:pb-2 ">
+    <footer className="w-full mx-auto max-w-7xl pt-10 border-t-8 border-goldenYellow-600  pl-4 lg:pl-0  ">
+        <div className=" pb-10 lg:pb-2 ">
         <div className="flex sm:flex-row flex-col justify-between   ">
             <section className="mb-4">
                 <Image src="/images/a2z.svg" alt="A2Z Logo" width={60} height={60} className="font-bold mb-1 cursor-pointer hover:opacity-80 hover:-translate-y-[2px] transition-transform"/>

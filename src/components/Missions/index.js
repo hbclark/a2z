@@ -113,7 +113,7 @@ export default function Missions(){
                     <div className="w-1/2 mx-auto">
                        <h2 className="text-3xl font-bold uppercase tracking-tight mb-6  ">{content.title}</h2>
                        <p className="pb-4">{content.description}</p>
-                       <button className="bg-rust-400 hover:bg-rust-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300">
+                       <button className="bg-retroBlue-600 hover:bg-retroBlue-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 cursor-pointer">
   Get Involved
 </button>
 
