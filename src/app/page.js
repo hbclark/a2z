@@ -2,6 +2,7 @@ import Image from "next/image";
 import Carousel from "@/components/Carousel";
 
 import {Achievements,CallToAction,Contact, Events,FAQ,NavBar,PricePlan,Missions,GreenIcons } from "@/components";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
    <PricePlan /></div>
    
    <div id="about"><Achievements />
+   <Testimonials />
    <GreenIcons /></div>
    
    <CallToAction />
