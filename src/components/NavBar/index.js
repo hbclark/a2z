@@ -25,9 +25,9 @@ export default function NavBar() {
   
   const navLinks = [
     { id:1,label: "Home", href: "/",icon: <CiHome /> },
-    { id:2,label: "Purpose", href: "/purpose",icon: <SiTransmission />},
-    { id:3,label: "About Us", href: "/about",icon: <MdOutlineRoundaboutLeft />},
-    { id:4,label: "Contact", href: "/contact",icon: <IoIosContact />},
+    { id:2,label: "Purpose", href: "#purpose",icon: <SiTransmission />},
+    { id:3,label: "About Us", href: "#about",icon: <MdOutlineRoundaboutLeft />},
+    { id:4,label: "Contact", href: "#contact",icon: <IoIosContact />},
   ];
  
   const fadeInAnimationVariants = {

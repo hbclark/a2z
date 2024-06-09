@@ -12,14 +12,16 @@ export default function Home() {
   
    </div>
    <Events />
-   <Missions />
+   <div id="purpose"><Missions />
+   <PricePlan /></div>
    
-   <Achievements />
-   <GreenIcons />
+   <div id="about"><Achievements />
+   <GreenIcons /></div>
+   
    <CallToAction />
-   <PricePlan />
-   <Contact />
-   <FAQ />  
+   <div id="contact"><Contact />
+   <FAQ />  </div>
+   
    </>
   );
 }

@@ -28,17 +28,25 @@ function handleClick(e,status){
           {recyclingEvents.map(({id, imageSrc,title, description, time, location}, index) => (
             <div key={id}
            
-            className="relative w-full h-[600px] rounded-xl">
+            className=" px-4 lg:px-0 relative w-full h-[550px] lg:h-[500px] rounded-xl">
+                <div className='relative h-[200px] lg:h-full'>
                 <Image
                 src={imageSrc}
                 alt="Description"
                 onMouseEnter={(e) => handleClick(e,true)}
                 onMouseLeave={(e) => handleClick(e,false)}
-                className="w-64 h-64 object-cover"
+                
                 id={id}
                 fill
                 />
-                
+                </div>
+                <div className="block lg:hidden">
+                <h3 className="text-3xl mb-2 font-bold mt-4">{title}</h3>
+                    <p className="mb-6 leading-6">{description}</p>
+                    <p className="text-xl font-semibold">{time}</p>
+                    <p>{location}</p>
+                    <button className=" w-32 mt-6 mr-4  bg-goldenYellow-700 px-2 py-2 rounded-md text-white hover:bg-transparent hover:outline hover:outline-1 hover:outline-goldenYellow-700">Learn More </button> 
+                </div>
                 <AnimatePresence mode="wait">
               
                 <motion.div className="z-10 absolute inset-0 bg-black bg-opacity-50 flex  items-center "
@@ -53,7 +61,7 @@ function handleClick(e,status){
                     <p className="mb-6 leading-6">{description}</p>
                     <p className="text-xl font-semibold">{time}</p>
                     <p>{location}</p>
-                    <button className=" w-32 mt-6 mr-4  bg-goldenYellow-500 px-2 py-2 rounded-md hover:text-goldenYellow-500 hover:bg-transparent hover:outline hover:outline-1 hover:outline-goldenYellow-500">Learn More </button> 
+                    <button className=" w-32 mt-6 mr-4  bg-goldenYellow-700 px-2 py-2 rounded-md hover:text-white hover:bg-transparent hover:outline hover:outline-1 hover:outline-goldenYellow-700">Learn More </button> 
                     </div>
                 </motion.div>
                 

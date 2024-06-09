@@ -2,10 +2,10 @@
 import Image from   "next/image";
 import { IoIosArrowRoundForward } from "react-icons/io";
 export default function CallToAction(){
-    return <div className="  mt-10  bg-gradient-to-b from-green-300 to-green-500">
+    return <div className="  mt-10  bg-gradient-to-b from-green-300 to-green-500 pb-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto">
         {/* <div className="absolute inset-0 bg-[url('/images/missions/background_texture.png')] bg-cover opacity-10"></div> */}
-<div className="my-auto w-full bg-emerald-500">
+<div className="my-4  w-full mx-auto ">
     <Image src="/images/recycle concept.jpg" alt="cta" width={600} height={600}
     className=" object-cover   " />
 

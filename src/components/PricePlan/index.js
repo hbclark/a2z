@@ -10,7 +10,7 @@ export default function PricePlan(){
     const prices = [
         {id:1,title:"General waste", price:"$100", features:["Feature 1", "Feature 2", "Feature 3"],color:"retroBlue-500"},
         {id:2,title:"Biomedical waster", price:"$300", features:["Feature 1", "Feature 2", "Feature 3"],color:"goldenYellow-600"},
-        {id:2,title:"Hazardous waste", price:"$600", features:["Feature 1", "Feature 2", "Feature 3"],color:"goldenYellow-600"},
+        {id:3,title:"Hazardous waste", price:"$600", features:["Feature 1", "Feature 2", "Feature 3"],color:"goldenYellow-600"},
         
        
     ]
@@ -36,10 +36,10 @@ export default function PricePlan(){
     
     return (
         <>
-        <h2 className="mt-8 mb-10  text-3xl font-bold text-center"><span className="pb-2 px-2 border-b-4 border-retroBlue-500">Our Price Options</span></h2>
+        <h2 className="mt-8 mb-10  text-3xl font-bold text-center"><span className="pb-2 px-2 ">Our Price Options</span></h2>
         
         
-        <div className="px-0 my-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3
+        <div className="px-0 my-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
         justify-center gap-4 ">
             
             {prices.map(({id,title,price,features,color}, index) => (

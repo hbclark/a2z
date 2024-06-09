@@ -54,13 +54,13 @@ export default function Missions(){
           "id": 3,
           "title": "Community Engagement",
           "description": "Engaging with local communities to educate and promote the benefits of recycling, aiming to foster a culture of sustainability.",
-          "image": "/images/missions/Sustainable Solutions.jpg"
+          "image": "/images/missions/community engagement.jpg"
         },
         {
           "id": 4,
           "title": "Circular Economy Promotion",
           "description": "Dedicated to transforming waste into resources to support a sustainable, circular economy for future generations.",
-          "image": "/images/missions/Sustainable Solutions.jpg"
+          "image": "/images/missions/Circular Economy Promotion.jpg"
         }
       ]
     return (
@@ -75,7 +75,7 @@ export default function Missions(){
                     currentIndex === index
                       ? "flex w-full  lg:h-[60vh]  transition-all duration-500 ease-in-out flex-col lg:flex-row"
                       : "hidden" 
-                  }`}
+                  } ${index%2===0?"lg:flex-row-reverse":""}`}
                   
                  
 
@@ -84,7 +84,8 @@ export default function Missions(){
                    <div className="lg:col-span-1 ">
                        <Image src={content.image}  alt={`${content.title}`} width={600} height={600} className="w-full h-full object-cover"/>
                    </div>
-                   <motion.div className="lg:col-span-1 pt-10 lg:pt-0 flex flex-col -translate-x-1/2 -translate-y-1/2 justify-center  text-left items-start"
+                   <motion.div className={`
+                   lg:col-span-1 pt-10 lg:pt-0 flex flex-col -translate-x-1/2 -translate-y-1/2 justify-center  text-left items-start`}
                    
                    
                    initial={{
