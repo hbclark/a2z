@@ -17,9 +17,8 @@ export default function Home() {
    <PricePlan /></div>
    
    <div id="about"><Achievements />
-   <Testimonials />
-   <GreenIcons /></div>
    
+   <GreenIcons /><Testimonials /></div>
    <CallToAction />
    <div id="contact"><Contact />
    <FAQ />  </div>

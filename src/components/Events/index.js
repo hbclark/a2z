@@ -28,7 +28,7 @@ function handleClick(e,status){
           {recyclingEvents.map(({id, imageSrc,title, description, time, location}, index) => (
             <div key={id}
            
-            className=" px-4 lg:px-0 relative w-full h-[550px] lg:h-[500px] rounded-xl">
+            className=" px-4 lg:px-0 relative w-full h-[600px] lg:h-[500px] rounded-xl">
                 <div className='relative h-[200px] lg:h-full'>
                 <Image
                 src={imageSrc}

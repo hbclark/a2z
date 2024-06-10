@@ -6,7 +6,7 @@ import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/2
 export default function Contact() {
   return (
     <>
-    <h1 className="my-6 text-center text-3xl font-bold">Contact Us</h1>
+    <h1 className="my-6 pt-20 text-center text-3xl font-bold">Contact Us</h1>
    
     <div className="relative isolate bg-white">
         
