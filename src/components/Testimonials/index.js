@@ -10,12 +10,13 @@ export default function Testimonials(){
         title:"user 1",
         description:	"From the pick-up drivers to the support staff your team always partners with us to make sure our needs are met.",
         img:"/images/Events/Community Recycling Day.jpg",
-        userName:"Greg G Since 2024"
+        userName:"Greg G",
+        time:"since 2024"
     },{id:2,
         title:"user 2",
         description:"Providing our company with a way to recycle the wide variety of product we have helps with our company wide green initiative.",
         img:"/images/Events/Tech Disposal Drive.jpg",
-        userName:"James P Since 2023"}]
+        userName:"James P",time:"since 2023"}]
 
     const [activeIndex,setActiveIndex] = useState(0);
     
@@ -30,7 +31,7 @@ export default function Testimonials(){
     
     
     
-    return (<div className="relative  pt-4 lg:pt-0 bg-green-400 px-2 lg:px-0">
+    return (<div className="relative text-white pt-4 lg:pt-0 bg-green-400 px-2 lg:px-0">
         
 
         
@@ -39,7 +40,7 @@ export default function Testimonials(){
             <h2 className="py-6 text-4xl text-center font-bold">Testimonials</h2>
             
         <AnimatePresence  mode="wait">
-          {testimonials.map(({id,title,description,img,userName},index)=>(
+          {testimonials.map(({id,title,description,img,userName,time},index)=>(
             activeIndex === index&&(
             <motion.div 
             initial={{opacity:0,x:"-100%"}} animate={{opacity:1,x:0}} exit={{opacity:0,x:0}} transition={{ duration: 0.5,}}
@@ -48,7 +49,7 @@ export default function Testimonials(){
                 <div >
                     
                     <p className="text-xl font-semibold">&quot;{description}&quot;</p>
-                    <p className="mt-4 tex-4xl font-bold">{userName}</p>
+                    <p className="mt-4 "><span className="tex-4xl font-bold">{userName}</span><span className=" ml-2 text-xs">{time}</span></p>
                 </div>
                 </div>
                 <div className="relative order-1 lg:order-2 h-[200px] lg:h-[550px]">

@@ -22,7 +22,7 @@ function ChatFrom(){
 export default function ChatButton() {
     const [isChatBoxOpen,setIsChatBoxOpen] = useState(false);
   return (
-    <div className="fixed bottom-20  right-20 bg-rust-300">
+    <div className="hidden fixed bottom-20  right-20 bg-rust-300">
         
         <IoChatbubbleEllipsesOutline />
     </div>
