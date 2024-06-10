@@ -64,7 +64,7 @@ export default function Missions(){
         }
       ]
     return (
-<div className="bg-gradient-to-b from-green-300 to-green-500">
+<div className=" mt-6 lg:mb-0 bg-gradient-to-b from-green-300 to-green-500">
 <ul className=" relative px-2 max-w-7xl pt-2 pb-20  lg:py-20  text-black w-full  mx-auto grid place-items-center">
   <h2 className="pb-6 text-3xl font-bold uppercase tracking-wider">Our Purposes</h2>
   {/* <div className="absolute inset-0 bg-[url('/images/missions/background_texture.png')] bg-cover opacity-10"></div> */}
