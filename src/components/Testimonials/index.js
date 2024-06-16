@@ -63,8 +63,8 @@ export default function Testimonials(){
            
             </AnimatePresence>
         </ul>
-        <button onClick ={handleNext} className="absolute p-3 top-1/2 right-4 -translate-x-1/2 -translate-y-1/2 rounded-full border text-slate-600 border-slate-600 hover:border-gray-900 z-1"  ><FaArrowRightLong className="text-slate-600" /></button>
-        <button onClick = {handlePrev} className="absolute p-3 top-1/2 left-8 -translate-x-1/2 -translate-y-1/2 rounded-full border border-slate-600 hover:border-gray-900 z-1"><FaArrowLeftLong /></button>
+        <button aria-label="move to next page" title="move to next page"  onClick ={handleNext} className="absolute p-3 top-1/2 right-4 -translate-x-1/2 -translate-y-1/2 rounded-full border text-slate-600 border-slate-600 hover:border-gray-900 z-1"  ><FaArrowRightLong className="text-slate-600" /></button>
+        <button  aria-label="move to previous page" title="move to previous page"  onClick = {handlePrev} className="absolute p-3 top-1/2 left-8 -translate-x-1/2 -translate-y-1/2 rounded-full border border-slate-600 hover:border-gray-900 z-1"><FaArrowLeftLong /></button>
     </div>)
 
 }
