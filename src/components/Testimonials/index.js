@@ -42,7 +42,7 @@ export default function Testimonials(){
         <AnimatePresence  mode="wait">
           {testimonials.map(({id,title,description,img,userName,time},index)=>(
             activeIndex === index&&(
-            <motion.div 
+            <motion.li 
             initial={{opacity:0,x:"-100%"}} animate={{opacity:1,x:0}} exit={{opacity:0,x:0}} transition={{ duration: 0.5,}}
             key={id} className="grid grid-cols-1  lg:grid-cols-2 ">
                 <div className="order-2 lg:order-1 h-[200px] lg:h-[550px] flex px-0 lg:px-20 justify-center items-center">
@@ -55,7 +55,7 @@ export default function Testimonials(){
                 <div className="relative order-1 lg:order-2 h-[200px] lg:h-[550px]">
                     <Image src={img} alt = {title} fill/>
                 </div>
-            </motion.div>)
+            </motion.li>)
 
           ))}
         
