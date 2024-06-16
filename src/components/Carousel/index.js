@@ -29,7 +29,7 @@ function Slider({title,img,description,button}){
             before:to-[rgba(0,0,0,0.7)]
             before:opacity-75
             before:z-[-5]">
-           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white ">
+           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-goldenYellow-700 ">
             <motion.h1 className="mb-4 text-4xl font-bold max-w-xl sm:mb-7"
             initial={{scale:1,opacity:1}}
             style={{scale:yText,opacity:opacityText}}
@@ -42,7 +42,7 @@ function Slider({title,img,description,button}){
             transition={{opacity:{ease: "easeInOut",duration:0.5},scaleY:{ease: "easeInOut",duration:0.5}}}>{description}
             
             </motion.p> 
-            <motion.button className=" mx-auto w-max  bg-retroBlue-700 px-2 py-2 rounded-md hover:text-white hover:bg-transparent hover:outline hover:outline-1 hover:outline-retroBlue-600"
+            <motion.button className=" mx-auto w-max text-white bg-retroBlue-700 px-2 py-2 rounded-md hover:text-white hover:bg-transparent hover:outline hover:outline-1 hover:outline-retroBlue-600"
             initial={{scale:1,opacity:1}}
             style={{scale:yText,opacity:opacityText}}
             transition={{opacity:{ease: "easeInOut",duration:0.5},scaleY:{ease: "easeInOut",duration:0.5}}}>{button}</motion.button>
