@@ -64,9 +64,10 @@ export default function Missions(){
         }
       ]
     return (
-<div className=" mt-6 lg:mb-0 bg-gradient-to-b from-green-300 to-green-500">
+<div className="  lg:mb-0 bg-gradient-to-b from-green-300 to-green-500 ">
+<p className="pb-6 pt-10 text-3xl font-bold uppercase tracking-wider text-center">Our Purposes</p>
 <ul className=" relative px-2 max-w-7xl pt-2 pb-20  lg:py-20  text-black w-full  mx-auto grid place-items-center">
-  <p className="pb-6 text-3xl font-bold uppercase tracking-wider">Our Purposes</p>
+  
   {/* <div className="absolute inset-0 bg-[url('/images/missions/background_texture.png')] bg-cover opacity-10"></div> */}
   <AnimatePresence>
             {contents.map((content,index)=>(

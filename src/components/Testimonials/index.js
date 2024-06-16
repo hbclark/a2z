@@ -33,11 +33,11 @@ export default function Testimonials(){
     
     return (<div className="relative text-white pt-4 lg:pt-0 bg-green-400 px-2 lg:px-0">
         
-
+        <p className="py-6 text-4xl text-center font-bold">Testimonials</p>
         
 
         <ul className="max-w-7xl mx-auto">
-            <h2 className="py-6 text-4xl text-center font-bold">Testimonials</h2>
+           
             
         <AnimatePresence  mode="wait">
           {testimonials.map(({id,title,description,img,userName,time},index)=>(
