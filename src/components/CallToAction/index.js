@@ -14,7 +14,7 @@ export default function CallToAction(){
     <div className="absolute inset-0 bg-[url('/images/missions/background_texture.png')] bg-cover opacity-10"></div>
     <h3 className=" mb-6 text-3xl font-bold capitalize">The planet&apos;s future is ours</h3>
     <p>Our actions today are shape tomorrow&apos;s earth. By making sustainable choice, we can ensure a vibrant future for our planet</p>
-    <button className="px-3 py-2 mt-4  rounded-lg bg-retroBlue-500 text-white flex flex-row
+    <button className="px-3 py-2 mt-4  rounded-lg bg-retroBlue-500 text-black flex flex-row
     hover:text-black hover:bg-transparent transition-transform hover:scale-105 items-center
     hover:outline-none hover:outline hover:outline-retroBlue-500 
     ">Act Now <IoIosArrowRoundForward className="ml-1  text-2xl   "/></button>
