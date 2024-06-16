@@ -48,10 +48,7 @@ function Slider({title,img,description,button}){
             transition={{opacity:{ease: "easeInOut",duration:0.5},scaleY:{ease: "easeInOut",duration:0.5}}}>{button}</motion.button>
            </div>
         
-           {/* <button className="z-10 block absolute top-1/2 right-2 mr-2 -translate-y-1/2 cursor-pointer  text-[rgba(255,255,255,0.3)] px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/10 hover:outline-gray-100/50 hover:scale-110 hover:text-[rgba(255,255,255,0.6)] hover:bg-[rgba(255,255,255,0.4]" onClick={onClickButton}><IoIosArrowForward /></button>
-        <button className="z-10 absolute top-1/2 left-2 mr-2 -translate-y-1/2 cursor-pointer  text-[rgba(255,255,255,0.3)] px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/10 hover:outline-gray-100/50 hover:scale-110 hover:text-[rgba(255,255,255,0.6)] hover:bg-[rgba(255,255,255,0.4]" onClick={onClickButton}>
-            <IoIosArrowBack 
-        className="text-[rgba(255,255,255,0.3] hover:text-[255,255,255,0.4]"/></button> */}
+          
  
 
         </motion.div>
@@ -83,7 +80,7 @@ export default function Carousel() {
 
         <button className="z-20 absolute top-1/2 left-2 mr-2 -translate-y-1/2 cursor-pointer  text-[rgba(255,255,255,0.6)] px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/60 hover:outline-gray-100/90 hover:scale-110 hover:text-[rgba(255,255,255,0.9)] hover:bg-gray-500" onClick={handleClick}>
             <IoIosArrowBack 
-        className="text-[rgba(255,255,255,0.3] hover:text-gray-500"/></button>
+        className="text-gray-500 hover:text-gray-400"/></button>
     <AnimatePresence mode="wait" initial={false}>
     {isClicked?(
     <MotionSlider key="0" 
