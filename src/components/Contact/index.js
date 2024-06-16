@@ -20,7 +20,7 @@ export default function Contact() {
               >
                 <defs>
                   <pattern
-                    id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
+                    id="ref-pattern-1"
                     width={200}
                     height={200}
                     x="100%"
@@ -60,7 +60,7 @@ export default function Contact() {
                   <PhoneIcon className="h-7 w-6 text-gray-400" aria-hidden="true" />
                 </dt>
                 <dd>
-                  <a className="hover:text-gray-900" href="tel:+1 (555) 234-5678">
+                  <a className="hover:text-gray-900" href="tel:155234-5678">
                     +1 (555) 234-5678
                   </a>
                 </dd>
@@ -79,7 +79,7 @@ export default function Contact() {
             </dl>
           </div>
           <div className="mt-4">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d190256.19615291755!2d-87.89676866711999!3d41.833615162506284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s545%20Mavis%20Island%20Chicago%2C%20IL%2099191!5e0!3m2!1sen!2sau!4v1716374434481!5m2!1sen!2sau" max-width="400" height="300" style={{border:0}}  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d190256.19615291755!2d-87.89676866711999!3d41.833615162506284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s545%20Mavis%20Island%20Chicago%2C%20IL%2099191!5e0!3m2!1sen!2sau!4v1716374434481!5m2!1sen!2sau"  height="300" style={{border:0}}  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
         <form action="#" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
