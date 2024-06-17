@@ -45,14 +45,14 @@ export default function Testimonials(){
             <motion.li 
             initial={{opacity:0,x:"-100%"}} animate={{opacity:1,x:0}} exit={{opacity:0,x:0}} transition={{ duration: 0.5,}}
             key={id} className="grid grid-cols-1  lg:grid-cols-2 ">
-                <div className="order-2 lg:order-1 h-[200px] lg:h-[550px] flex px-0 lg:px-20 justify-center items-center">
+                <div className="order-2 lg:order-1 h-[200px] lg:h-[350px] flex px-0 lg:px-20 justify-center items-center">
                 <div >
                     
                     <p className="text-xl font-semibold">&quot;{description}&quot;</p>
                     <p className="mt-4 "><span className="tex-4xl font-bold">{userName}</span><span className=" ml-2 text-xs">{time}</span></p>
                 </div>
                 </div>
-                <div className="relative order-1 lg:order-2 h-[200px] lg:h-[550px]">
+                <div className="relative order-1 lg:order-2 h-[200px] lg:h-[350px]">
                     <Image src={img} alt = {title} fill/>
                 </div>
             </motion.li>)

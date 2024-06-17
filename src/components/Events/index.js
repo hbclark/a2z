@@ -28,7 +28,7 @@ function handleClick(e,status){
           {recyclingEvents.map(({id, imageSrc,title, description, time, location}, index) => (
             <div key={id}
            
-            className=" px-4 lg:px-0 relative w-full h-[600px] lg:h-[500px] rounded-xl">
+            className=" px-4 lg:px-0 relative w-full h-[500px] lg:h-[350px] rounded-xl">
                 <div className='relative h-[200px] lg:h-full'>
                 <Image
                 src={imageSrc}
@@ -41,7 +41,7 @@ function handleClick(e,status){
                 />
                 </div>
                 <div className="block lg:hidden">
-                <h3 className="text-3xl mb-2 font-bold mt-4">{title}</h3>
+                <h3 className="text-2xl mb-2 font-bold mt-4">{title}</h3>
                     <p className="mb-6 leading-6">{description}</p>
                     <p className="text-xl font-semibold">{time}</p>
                     <p>{location}</p>
