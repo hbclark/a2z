@@ -31,7 +31,7 @@ export default function Testimonials(){
     
     
     
-    return (<div className="relative text-black pt-4 lg:pt-0 bg-green-400 px-2 lg:px-0">
+    return (<div className="relative text-black py-4 lg:pt-0 bg-green-400 px-2 lg:px-0">
         
         <p className="py-6 text-4xl text-center font-bold ">Testimonials</p>
         
