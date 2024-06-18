@@ -10,7 +10,7 @@ export default function CallToAction(){
     className=" object-cover   " />
 
 </div>
-<div className=" my-auto  text-white px-2 lg:px-20  ">
+<div className=" my-auto  text-black px-2 lg:px-20  ">
     <div className="absolute inset-0 bg-[url('/images/missions/background_texture.png')] bg-cover opacity-10"></div>
     <h3 className=" mb-6 text-3xl font-bold capitalize">The planet&apos;s future is ours</h3>
     <p>Our actions today are shape tomorrow&apos;s earth. By making sustainable choice, we can ensure a vibrant future for our planet</p>

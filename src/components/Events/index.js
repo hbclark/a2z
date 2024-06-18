@@ -32,7 +32,7 @@ function handleClick(e,status){
                 <div className='relative h-[200px] lg:h-full'>
                 <Image
                 src={imageSrc}
-                alt="Description"
+                alt={description}
                 onMouseEnter={(e) => handleClick(e,true)}
                 onMouseLeave={(e) => handleClick(e,false)}
                 
