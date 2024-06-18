@@ -88,8 +88,8 @@ export default function GreenIcons(){
      
     </div>
 
-    <Link href="https://www.freepik.com/search"
-className="absolute bottom-2 right-2 text-black text-xs">Icon by Freepik</Link>
+    {/* <Link href="https://www.freepik.com/search"
+className="absolute bottom-2 right-2 text-black text-xs">Icon by Freepik</Link> */}
 
 
         </div>
